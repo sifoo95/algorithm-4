@@ -1,0 +1,15 @@
+ALGORITHM inseration sort
+VAR
+ i,j:INTEGER;
+ current:INTEGER;
+BEGIN
+     FOR i FROM 1 TO arr.length-1 DO
+        current := arr [i];
+        j := i-1;
+        WHILE (j >= 0 AND [j] > current) DO
+            arr[j+1] := [j];
+            j := j-1;
+        END_WHILE
+        arr[j+1] = current;
+    END_FOR
+END
